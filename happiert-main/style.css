@@ -1,0 +1,109 @@
+@import url('//fonts.googleapis.com/earlyaccess/notosanskr.css');
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+
+header {
+    width: 100%;
+    max-width: 1920px;
+    min-width: 300px;
+    position: relative;
+    z-index: 10;
+}
+
+.header_banner {
+    position: absolute;
+    z-index: 100;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 45px;
+    background-color: #be201f;
+    font-size: 14px;
+    font-weight: 200;
+    color: #fff;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.main {
+    position: relative;
+    height: 885px;
+}
+
+.main_bg {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+
+nav {
+    display: flex;
+    z-index: 50;
+    position: absolute;
+    justify-content: space-between;
+    align-items: center;
+    height: 80px;
+    padding: 0 30px;
+    top: 45px;
+    width: 100%;
+}
+
+.category {
+    font-size: 24px;
+    font-weight: 600;
+    color: #be201f;
+    display: flex;
+    gap: 30px;
+    list-style: none;
+    margin: 60px 0 0 60px;
+}
+
+.logo {
+    width: 162px;
+    height: 44px;
+    margin-top: 60px;
+    position: absolute;
+    left: 50%;
+    transform: translateX(-50%);
+}
+
+.my_page {
+    display: flex;
+    margin-top: 60px;
+    justify-content: space-between;
+    gap: 30px;
+    margin-right: 60px;
+}
+
+.main {
+   position: relative;
+   height: 885px;
+}
+
+.main_text {
+    position: absolute;
+    top: 30%;
+    left: 80px;
+    color: #fff;
+}
+
+.main_text h1 {
+    font-size: 45px;
+    font-weight: 700;
+    margin-bottom: 20px;
+    white-space: nowrap;
+}
+.main_text h3 {
+    font-size: 20px;
+    padding-top: 20px;
+    font-weight: 500;
+}
+
+.product {
+    
+}
