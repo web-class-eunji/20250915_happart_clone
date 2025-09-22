@@ -1,0 +1,103 @@
+:root {
+    --main_red_color: #be201f;
+    --main_red_bg: #be201f;
+}
+
+/* 메인섹션시작 */
+
+.main_section {
+    position: relative;
+}
+
+header {
+    position: fixed;
+    top: 0;
+    width: 100%;
+    z-index: 1000;
+}
+
+
+.bg_area {
+    background: url(../img/main_section_bg.png);
+    height: 100vh;
+    position: absolute;
+    width: 100%;
+    background-repeat: no-repeat;   
+    display: flex;
+    align-items: center;
+    padding: 0 100px;
+}
+
+header > p {
+    background: var(--main_red_bg);
+    text-align: center;
+    color: #fff;
+    padding: 14px 0;
+    font-size: 14px;
+}
+
+.header_bottom,
+.header_menu,
+.header_icon {
+    display: flex;
+}
+
+.header_bottom {
+    justify-content: space-between;
+    padding: 32px 80px;
+    align-items: center;
+}
+
+.header_menu,
+.logo,
+.header_icon {
+    width: 500px;
+}
+
+.logo {
+    text-align: center;
+}
+
+.header_icon {
+    justify-content: flex-end;
+}
+
+.header_menu,
+.header_icon {
+    gap: 24px;
+}
+
+.header_menu > li {
+    font-size: 20px;
+    color: var(--main_red_color);
+    font-weight: 600;
+}
+
+.header_menu > li::after {
+    content: '';
+    background: var(--main_red_bg);
+    width: 0%;
+    height: 2px;
+    display: block;
+    margin-top: 16px;
+    transition: 0.3s;
+}
+
+.header_menu > li:hover::after {
+    width: 100%;
+}
+
+.main_text > h2 {
+    font-size: 50px;
+    line-height: 75px;
+    color: #fff;
+    font-weight: 600;
+}
+
+.main_text > p {
+    font-size: 20px;
+    color: #fff;
+    margin-top: 24px;
+}
+
+/* 메인섹션끝 */
