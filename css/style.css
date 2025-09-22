@@ -26,6 +26,7 @@ header {
     display: flex;
     align-items: center;
     padding: 0 100px;
+    box-sizing: border-box;
 }
 
 header > p {
@@ -101,3 +102,242 @@ header > p {
 }
 
 /* 메인섹션끝 */
+
+/* 쉐이크 리스트 섹션 시작 */
+.shack_list_section {
+    padding: 1000px 80px 80px 80px;
+}
+
+.shack_list {
+    display: flex;
+    justify-content: space-between;
+}
+
+.shack_list > li > img {
+    width: 558px;
+    height: 683px;
+}
+
+.shack_list > li {
+    color: var(--main_red_color);
+}
+
+.shack_name {
+    font-size: 20px;
+    font-weight: 600;
+    margin: 16px 0;
+}
+
+.shack_price {
+    display: flex;
+    gap: 16px;
+    font-size: 20px;
+    font-weight: 600;
+}
+
+.real_price {
+    color: #e0a8a8;
+    text-decoration: line-through;
+}
+
+.shack_discount {
+    border: 1px solid var(--main_red_bg);
+    border-radius: 24px;
+    padding: 8px;
+    margin-top: 16px;
+    display: inline-block;
+}
+
+/* 쉐이크 리스트 섹션 끝 */
+
+/* 리서치 섹션 시작 */
+/* 회전하는 텍스트 애니메이션 시작 */
+
+.research_section {
+    overflow: hidden;
+}
+
+.text_ani_box {
+    width: max-content;
+    animation: roll 70s infinite linear;
+}
+
+.text_ani_box > p {
+    font-size: 170px;
+    color: var(--main_red_color);
+}
+
+@keyframes roll {
+    0%{
+        transform: translateX(0);
+    }
+    100%{
+        transform: translateX(-50%);
+    }
+}
+/* 회전하는 텍스트 애니메이션 끝 */
+
+/* 리서치 박스 시작 */
+.research_box {
+    margin: 80px;
+}
+
+.research_list {
+    display: flex;
+    justify-content: space-between;
+}
+
+.research_list_text {
+    width: 560px;
+    padding: 60px 40px;
+    box-sizing: border-box;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+}
+
+.research_list_text h2 {
+    font-size: 50px;
+    font-weight: 600;
+    color: var(--main_red_color);
+    margin-bottom: 32px;
+}
+
+.research_list_text p {
+    color: var(--main_red_color);
+    line-height: 24px;   
+}
+
+.more_btn {
+    color: var(--main_red_color);
+    text-decoration: none;
+    font-size: 20px;
+    border: 1px solid var(--main_red_bg);
+    width: fit-content;
+    padding: 16px 32px;
+    border-radius: 50px;
+    transition: 0.5s;
+}
+
+.more_btn:hover {
+    color: #fff;
+    background: var(--main_red_bg);
+}
+
+.research_bottom {
+    margin-top: 32px;
+}
+/* 리서치 박스 끝 */
+
+/* 애니메이션존 시작 */
+.animation_zone {
+    display: flex;
+    justify-content: space-between;
+    margin: 100px 80px;
+    align-items: center;
+}
+
+.animation_text {
+    font-size: 120px;
+    color: var(--main_red_color);
+    line-height: 170px;
+}
+
+.animation_text > span {
+    border: 3px solid var(--main_red_color);
+    padding: 0 60px 18px;
+    border-radius: 100px;
+}
+
+.animation_img {
+    animation: img_rotate 15s infinite linear;
+}
+
+@keyframes img_rotate {
+    0% {
+        transform: rotate(0);
+    }
+
+    100% {
+        transform: rotate(360deg);
+    }
+}
+/* 애니메이션존 끝 */
+
+/* 다이어트 섹션 시작 */
+.diet_section {
+    background: url(../img/diet_section_bg.png);
+    height: 740px; 
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.diet_section > p {
+    text-align: center;
+    color: #fff;
+    margin-bottom: 80px;
+    font-size: 20px;
+    line-height: 32px;
+}
+
+.diet_section > h2 {
+    font-size: 60px;
+    color: #fff;
+    margin-bottom: 32px;
+    font-weight: 600;
+}
+
+.more_btn.white {
+    color: #fff;
+    background: none;
+    border: 1px solid #fff;
+}
+
+.more_btn.white:hover {
+    color: var(--main_red_color);
+    background-color: #fff;
+}
+/* 다이어트 섹션 끝 */
+
+/* 푸터시작 */
+footer {
+    background: var(--main_red_bg);
+    padding: 100px 80px;   
+}
+
+.footer_content {
+    display: flex;
+    justify-content: space-between;
+    margin-top: 80px;
+    font-size: 20px;
+    line-height: 32px;
+    color: #fff;
+    
+}
+
+.footer_content h3 {
+    font-size: 24px;
+    font-weight: 600;
+    margin-bottom: 32px;
+}
+
+.info > p:last-child {
+    margin-top: 32px;
+}
+
+.guide > ul > li {
+    padding: 12px 0;
+    border-bottom: 1px solid #fff;
+    width: 250px;
+}
+
+.contact > div {
+    padding: 16px 0;
+}
+
+.plus_text {
+    font-size: 26px;
+    font-weight: 600;
+}
