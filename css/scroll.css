@@ -1,0 +1,20 @@
+.to_bottom {
+    transform: translateY(200px);
+}
+
+.fade {
+    opacity: 0;
+    transition: 1s;
+}
+
+.in {
+    transform: none;
+    opacity: 1;
+}
+
+.delay:nth-child(2) {
+    transition-delay: 0.3s;
+}
+.delay:nth-child(3) {
+    transition-delay: 0.6s;
+}
